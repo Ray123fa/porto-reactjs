@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp -r dist/assets ../ray123fa && cp -r dist/img ../ray123fa && cp dist/index.html ../ray123fa",
+    "del": "rm -rf ../ray123fa/assets && rm -rf ../ray123fa/img && rm ../ray123fa/index.html",
+    "copydist": "cp -r dist/assets ../ray123fa && cp -r dist/img ../ray123fa && cp dist/index.html ../ray123fa",
+    "build": "vite build && npm run del && npm run copydist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
