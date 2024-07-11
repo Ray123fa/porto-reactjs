@@ -8,7 +8,7 @@
     "del": "rm -rf ../ray123fa/assets && rm -rf ../ray123fa/img && rm ../ray123fa/index.html",
     "cphtaccess": "cp -r .htaccess/.htaccess dist/assets && cp -r .htaccess/.htaccess dist/img",
     "cpdist": "cp -r dist/assets ../ray123fa && cp -r dist/img ../ray123fa && cp dist/index.html ../ray123fa",
-    "build": "vite build && npm run del && npm run cphtaccess && npm run cpdist",
+    "build": "npm run del && npm run cphtaccess && npm run cpdist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
